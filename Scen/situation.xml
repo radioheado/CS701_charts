@@ -31,7 +31,7 @@
           <OntologyEntity>
             <OntologyString>c:\windows\1111.exe</OntologyString>
           </OntologyEntity>
-          <String> host </String>
+          <String> on host </String>
           <OntologyEntity>
             <OntologyString>10.10.1.10</OntologyString>
           </OntologyEntity>
@@ -47,11 +47,492 @@
           <OntologyEntity>
             <OntologyString>03/26/2020 08:35:43</OntologyString>
           </OntologyEntity>
+          <String>?</String>
         </Fragments>
       </NLPattern>
       <SituationExampleReference version="1.0" kbPartName="Scen" index="0" />
     </IntelligenceQuestionExample>
 </IntelligenceQuestionExamples>
+<HypothesisExamples>
+<HypothesisExample version="1.0" index="0" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> written into </String>
+          <OntologyEntity>
+            <OntologyString>c:\windows\1111.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> from external host </String>
+          <OntologyEntity>
+            <OntologyString>64.10.7.1</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="SMB transfer protocol" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> is part of SMB Copy and Execution attack</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="1" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> written into </String>
+          <OntologyEntity>
+            <OntologyString>c:\windows\1111.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> from external host </String>
+          <OntologyEntity>
+            <OntologyString>64.10.7.1</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="SMB transfer protocol" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> is part of normal system activity</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="2" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="Lateral Movement tactic" />
+          </OntologyEntity>
+          <String>: </String>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> written into </String>
+          <OntologyEntity>
+            <OntologyString>c:\windows\1111.exe</OntologyString>
+          </OntologyEntity>
+          <String> of host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> from external host </String>
+          <OntologyEntity>
+            <OntologyString>64.10.7.1</OntologyString>
+          </OntologyEntity>
+          <String> (Windows Admin Shares technique) through </String>
+          <OntologyEntity>
+            <InstanceReference name="SMB transfer protocol" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> (</String>
+          <OntologyEntity>
+            <InstanceReference name="Remote File Copy technique" />
+          </OntologyEntity>
+          <String>)</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="3" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="Execution tactic" />
+          </OntologyEntity>
+          <String>: </String>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> executed on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> after </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="4" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="Service Execution technique" />
+          </OntologyEntity>
+          <String>: </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> executed on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="Service Execution technique" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="5" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="Windows Management Instrumentation technique" />
+          </OntologyEntity>
+          <String>: </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> executed on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="Windows Management Instrumentation technique" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="6" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="Scheduled Task technique" />
+          </OntologyEntity>
+          <String>: </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> executed on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="Scheduled Task technique" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="7" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="Windows Management Instrumentation technique" />
+          </OntologyEntity>
+          <String> </String>
+          <OntologyEntity>
+            <ConceptReference name="connection" />
+          </OntologyEntity>
+          <String> is active on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="8" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>WMIC command is executed in command-line on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="Remote Procedure Call" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="9" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>WMIC command is executed in command-line on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="10" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>There are active </String>
+          <OntologyEntity>
+            <InstanceReference name="Remote Procedure Call" />
+          </OntologyEntity>
+          <String> connections on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="12" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>WMIC command is executed locally on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+</HypothesisExamples>
+<TriggerExamples>
+<TriggerExample version="1.0" index="0" editedAfterGenerated="true">
+      <NLPattern>
+        <Fragments>
+          <String>Alert: </String>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> written into </String>
+          <OntologyEntity>
+            <OntologyString>c:\windows\1111.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> from external host </String>
+          <OntologyEntity>
+            <OntologyString>64.10.7.1</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="SMB transfer protocol" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> </String>
+        </Fragments>
+      </NLPattern>
+    </TriggerExample>
+</TriggerExamples>
+<CollectionTaskExamples>
+<CollectionTaskExample version="1.0" index="0" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Search for the process that is created from </String>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> after </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="1" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether </String>
+          <OntologyEntity>
+            <InstanceReference name="Windows Management Instrumentation technique" />
+          </OntologyEntity>
+          <String> </String>
+          <OntologyEntity>
+            <ConceptReference name="connection" />
+          </OntologyEntity>
+          <String> is active on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> after </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> </String>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="2" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether WMIC command is executed in command-line on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="3" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether there are active </String>
+          <OntologyEntity>
+            <InstanceReference name="Remote Procedure Call" />
+          </OntologyEntity>
+          <String> connections on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="4" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether WMIC command is executed locally on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+</CollectionTaskExamples>
+<ArgumentStepExamples>
+<ArgumentStepExample version="1.0" index="0" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="3" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="1" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="3" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="4" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="2" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="3" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="3" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="3" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="6" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="4" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="5" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="7" />
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="8" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="5" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="8" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="9" />
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="10" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="7" favoring="false">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="8" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="12" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+</ArgumentStepExamples>
+<AbductiveStepExamples>
+<AbductiveStepExample version="1.0" index="0">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
+      <TriggerExampleReference version="1.0" kbPartName="Scen" index="0" />
+    </AbductiveStepExample>
+</AbductiveStepExamples>
+<CollectionStepExamples>
+<CollectionStepExample version="1.0" index="0">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="3" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="0" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="1">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="7" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="1" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="2">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="9" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="2" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="3">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="10" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="3" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="4">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="12" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="4" />
+    </CollectionStepExample>
+</CollectionStepExamples>
 <EvidenceAssociationMap>
     <hypothesisEvidenceAssociationList />
   </EvidenceAssociationMap>
