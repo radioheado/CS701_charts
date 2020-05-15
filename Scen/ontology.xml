@@ -324,6 +324,25 @@
         </NLPattern>
       </NLInfo>
     </Instance>
+<Instance name="scheduled task pattern by at">
+      <DirectSuperConcepts>
+        <ConceptReference name="computer file system absolute path" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="scheduled task pattern by at" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 <Instance name="windows admin shares path1">
       <DirectSuperConcepts>
         <ConceptReference name="computer file system absolute path" />
@@ -364,6 +383,15 @@
     </Instance>
 </Instances>
 <Facts>
+<Fact>
+      <FeatureReference name="has as external name matching" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="scheduled task pattern by at" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>C:\Windows\System32\AT\&lt;job_id\></OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
 <Fact>
       <FeatureReference name="has as external name" />
       <ConstantInstantiatedFormalParameters>

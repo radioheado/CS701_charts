@@ -1689,6 +1689,25 @@
         </NLPattern>
       </NLInfo>
     </Concept>
+<Concept name="TCP port">
+      <DirectSuperConcepts>
+        <ConceptReference name="named port" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="TCP port" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 <Concept name="DNS port">
       <DirectSuperConcepts>
         <ConceptReference name="named port" />
@@ -4583,7 +4602,9 @@
         <ParameterClassicPVSDomain>
           <FormalParameterReference name="&lt;P1>" />
           <LowerBound>
-            <ClassicEmptyBound />
+            <ClassicConceptLowerBound>
+              <ConceptReference name="computer file system absolute path" />
+            </ClassicConceptLowerBound>
           </LowerBound>
           <UpperBound>
             <ClassicConceptBound>
@@ -4594,7 +4615,7 @@
         <ParameterClassicPVSDomain>
           <FormalParameterReference name="&lt;P2>" />
           <LowerBound>
-            <ClassicEmptyBound />
+            <AnyStringBound />
           </LowerBound>
           <UpperBound>
             <AnyStringBound />
