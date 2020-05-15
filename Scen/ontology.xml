@@ -1,6 +1,120 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
+<Instance name="time1">
+      <DirectSuperConcepts>
+        <ConceptReference name="time" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="time1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="destination IP1">
+      <DirectSuperConcepts>
+        <ConceptReference name="IP assignment" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="destination IP1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="source IP1">
+      <DirectSuperConcepts>
+        <ConceptReference name="IP assignment" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="source IP1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="source port1">
+      <DirectSuperConcepts>
+        <ConceptReference name="internal port" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="source port1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="connection1">
+      <DirectSuperConcepts>
+        <ConceptReference name="connection" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="connection1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="domain1">
+      <DirectSuperConcepts>
+        <ConceptReference name="domain" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="domain1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 <Instance name="process1">
       <DirectSuperConcepts>
         <ConceptReference name="Windows process" />
@@ -12,6 +126,25 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="process1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="destination port1">
+      <DirectSuperConcepts>
+        <ConceptReference name="DNS port" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="destination port1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>

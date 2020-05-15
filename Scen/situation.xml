@@ -4,7 +4,10 @@
 <SituationExample version="1.0" index="0">
       <NLPattern>
         <Fragments>
-          <String>Suspicious process</String>
+          <String>Suspicious </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
         </Fragments>
       </NLPattern>
       <NLPattern>
@@ -18,7 +21,7 @@
         <Fragments>
           <String>What has generated the suspicious </String>
           <OntologyEntity>
-            <ConceptReference name="connection" />
+            <InstanceReference name="process1" />
           </OntologyEntity>
           <String>?</String>
         </Fragments>
