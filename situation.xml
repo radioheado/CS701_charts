@@ -3979,7 +3979,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -3990,7 +3990,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="IP address" />
+                    <ConceptReference name="IP addresss" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -4001,7 +4001,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="domain" />
+                    <ConceptReference name="domains" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -4012,7 +4012,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -4023,7 +4023,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="IP address" />
+                    <ConceptReference name="IP addresss" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -6244,12 +6244,12 @@
                 <FormalParameterReference name="?O3" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="temporary file" />
+                    <ConceptReference name="temporary files" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="temporary file" />
+                    <ConceptReference name="temporary files" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -6257,12 +6257,12 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="temporary folder" />
+                    <ConceptReference name="temporary folders" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="temporary folder" />
+                    <ConceptReference name="temporary folders" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -6284,11 +6284,11 @@
                 <OntologyString>\\~_MC_[2-7]\\~[0-9]*</OntologyString>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>
-                  <ConceptReference name="temporary file" />
+                  <ConceptReference name="temporary files" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="temporary folder" />
+                  <ConceptReference name="temporary folders" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -6425,12 +6425,12 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="data file" />
+                    <ConceptReference name="data files" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="data file" />
+                    <ConceptReference name="data files" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -6450,7 +6450,7 @@
                 <OntologyString>%USERPROFILE%\\sam.sav</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="data file" />
+                  <ConceptReference name="data files" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -6587,12 +6587,12 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="library file" />
+                    <ConceptReference name="library files" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="library file" />
+                    <ConceptReference name="library files" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -6612,7 +6612,7 @@
                 <OntologyString>%SYSTEMROOT%\\system32\\drivers\\riodrv32.sys</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="library file" />
+                  <ConceptReference name="library files" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -6881,7 +6881,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="command shell file" />
+                    <ConceptReference name="command shell files" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -6892,7 +6892,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="command shell file" />
+                    <ConceptReference name="command shell files" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -8031,20 +8031,20 @@
           <FormalParameterReference name="?O3" />
         </GenerateIndexedInstanceActionPattern>
         <GenerateIndexedInstanceActionPattern>
-          <ConceptReference name="domain" />
+          <ConceptReference name="domains" />
           <FormalParameterReference name="?O4" />
         </GenerateIndexedInstanceActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FormalParameterReference name="?O5" />source IP</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="port" />
+          <ConceptReference name="ports" />
           <FormalParameterReference name="?O6" />source port</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FormalParameterReference name="?O7" />destination IP</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="DNS port" />
+          <ConceptReference name="DNS ports" />
           <FormalParameterReference name="?O8" />destination port</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateFactActionPattern>
           <FeatureReference name="has as source IP" />
@@ -8260,7 +8260,7 @@
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="dynamic domain address" />
+                    <ConceptReference name="dynamic domain addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -8273,7 +8273,7 @@
                 <FormalParameterReference name="?O5" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -8286,12 +8286,12 @@
                 <FormalParameterReference name="?O6" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -8299,7 +8299,7 @@
                 <FormalParameterReference name="?O7" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -8312,12 +8312,12 @@
                 <FormalParameterReference name="?O8" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="DNS port" />
+                    <ConceptReference name="DNS ports" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -8355,23 +8355,23 @@
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <MintermOfConcepts>
-                  <ConceptReference name="dynamic domain address" />
+                  <ConceptReference name="dynamic domain addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O5" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O6" />
                 <MintermOfConcepts>
-                  <ConceptReference name="port" />
+                  <ConceptReference name="ports" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O7" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O8" />
                 <MintermOfConcepts>
-                  <ConceptReference name="DNS port" />
+                  <ConceptReference name="DNS ports" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -8493,20 +8493,20 @@
           <FormalParameterReference name="?O3" />
         </GenerateIndexedInstanceActionPattern>
         <GenerateIndexedInstanceActionPattern>
-          <ConceptReference name="domain" />
+          <ConceptReference name="domains" />
           <FormalParameterReference name="?O4" />
         </GenerateIndexedInstanceActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FormalParameterReference name="?O5" />source IP</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="port" />
+          <ConceptReference name="ports" />
           <FormalParameterReference name="?O6" />source port</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FormalParameterReference name="?O7" />destination IP</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="http port" />
+          <ConceptReference name="http ports" />
           <FormalParameterReference name="?O8" />destination port</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateFactActionPattern>
           <FeatureReference name="has as source IP" />
@@ -8722,7 +8722,7 @@
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="dynamic domain address" />
+                    <ConceptReference name="dynamic domain addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -8735,7 +8735,7 @@
                 <FormalParameterReference name="?O5" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -8748,12 +8748,12 @@
                 <FormalParameterReference name="?O6" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -8761,7 +8761,7 @@
                 <FormalParameterReference name="?O7" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -8774,12 +8774,12 @@
                 <FormalParameterReference name="?O8" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="http port" />
+                    <ConceptReference name="http ports" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="port" />
+                    <ConceptReference name="ports" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -8817,23 +8817,23 @@
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <MintermOfConcepts>
-                  <ConceptReference name="dynamic domain address" />
+                  <ConceptReference name="dynamic domain addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O5" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O6" />
                 <MintermOfConcepts>
-                  <ConceptReference name="port" />
+                  <ConceptReference name="ports" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O7" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O8" />
                 <MintermOfConcepts>
-                  <ConceptReference name="http port" />
+                  <ConceptReference name="http ports" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -8898,12 +8898,12 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O4" />
-          <ConceptReference name="domain" />
+          <ConceptReference name="domains" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S2" />
         </GetInstanceWithFactActionPattern>
         <GenerateIndexedInstanceActionPattern>
-          <ConceptReference name="IP address mapping" />
+          <ConceptReference name="IP address mappings" />
           <FormalParameterReference name="?O1" />
         </GenerateIndexedInstanceActionPattern>
         <GetOrGenerateEvidenceWithNameActionPattern>
@@ -8985,7 +8985,7 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IP address mapping" />
+                    <ConceptReference name="IP address mappings" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -8998,7 +8998,7 @@
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="domain" />
+                    <ConceptReference name="domains" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -9054,11 +9054,11 @@
                 <OntologyString>69.195.129.72</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IP address mapping" />
+                  <ConceptReference name="IP address mappings" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <MintermOfConcepts>
-                  <ConceptReference name="domain" />
+                  <ConceptReference name="domains" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S6" />
                 <OntologyString>69.195.129.72 is mapped to domain a-jsm.infobusinessus.org at time 12/23/2017 12:18:07 PM</OntologyString>
@@ -9121,7 +9121,7 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O1" />
-          <ConceptReference name="domain" />
+          <ConceptReference name="domains" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S1" />
         </GetInstanceWithFactActionPattern>
@@ -9214,7 +9214,7 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="domain" />
+                    <ConceptReference name="domains" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -9267,7 +9267,7 @@
                 <OntologyString>L11</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="domain" />
+                  <ConceptReference name="domains" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
@@ -10440,13 +10440,13 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O2" />
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S2" />
         </GetInstanceWithFactActionPattern>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O4" />
-          <ConceptReference name="temporary folder" />
+          <ConceptReference name="temporary folders" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S1" />
         </GetInstanceWithFactActionPattern>
@@ -10546,7 +10546,7 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -10572,12 +10572,12 @@
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="temporary folder" />
+                    <ConceptReference name="temporary folders" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="file system object" />
+                    <ConceptReference name="file system object1" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -10601,7 +10601,7 @@
                 <OntologyString>L11</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>
@@ -10609,7 +10609,7 @@
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <MintermOfConcepts>
-                  <ConceptReference name="temporary folder" />
+                  <ConceptReference name="temporary folders" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -10695,13 +10695,13 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O2" />
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S3" />
         </GetInstanceWithFactActionPattern>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O4" />
-          <ConceptReference name="temporary file" />
+          <ConceptReference name="temporary files" />
           <FeatureReference name="has as external name matching" />
           <FormalParameterReference name="?S1" />
         </GetInstanceWithFactActionPattern>
@@ -10812,7 +10812,7 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -10838,12 +10838,12 @@
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="temporary file" />
+                    <ConceptReference name="temporary files" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="file system object" />
+                    <ConceptReference name="file system object1" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -10869,7 +10869,7 @@
                 <OntologyString>L11</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>
@@ -10877,7 +10877,7 @@
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <MintermOfConcepts>
-                  <ConceptReference name="temporary file" />
+                  <ConceptReference name="temporary files" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -10951,13 +10951,13 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O2" />
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S2" />
         </GetInstanceWithFactActionPattern>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O4" />
-          <ConceptReference name="data file" />
+          <ConceptReference name="data files" />
           <FeatureReference name="has as path name" />
           <FormalParameterReference name="?S1" />
         </GetInstanceWithFactActionPattern>
@@ -11057,7 +11057,7 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -11083,12 +11083,12 @@
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="data file" />
+                    <ConceptReference name="data files" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="file system object" />
+                    <ConceptReference name="file system object1" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -11112,7 +11112,7 @@
                 <OntologyString>L11</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>
@@ -11120,7 +11120,7 @@
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <MintermOfConcepts>
-                  <ConceptReference name="data file" />
+                  <ConceptReference name="data files" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -11194,13 +11194,13 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O2" />
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S2" />
         </GetInstanceWithFactActionPattern>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O4" />
-          <ConceptReference name="library file" />
+          <ConceptReference name="library files" />
           <FeatureReference name="has as path name" />
           <FormalParameterReference name="?S1" />
         </GetInstanceWithFactActionPattern>
@@ -11300,7 +11300,7 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -11326,12 +11326,12 @@
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="library file" />
+                    <ConceptReference name="library files" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="file system object" />
+                    <ConceptReference name="file system object1" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -11355,7 +11355,7 @@
                 <OntologyString>L11</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>
@@ -11363,7 +11363,7 @@
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <MintermOfConcepts>
-                  <ConceptReference name="library file" />
+                  <ConceptReference name="library files" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -11451,19 +11451,19 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O2" />
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S1" />
         </GetInstanceWithFactActionPattern>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O3" />
-          <ConceptReference name="command shell file" />
+          <ConceptReference name="command shell files" />
           <FeatureReference name="has as path name" />
           <FormalParameterReference name="?S2" />
         </GetInstanceWithFactActionPattern>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O4" />
-          <ConceptReference name="command shell file" />
+          <ConceptReference name="command shell files" />
           <FeatureReference name="has as path name" />
           <FormalParameterReference name="?S3" />
         </GetInstanceWithFactActionPattern>
@@ -11603,7 +11603,7 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -11621,7 +11621,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="file system object" />
+                    <ConceptReference name="file system object1" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -11634,7 +11634,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="file system object" />
+                    <ConceptReference name="file system object1" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -11677,7 +11677,7 @@
                 <OntologyString>L11</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <InstanceReference name="Auriga command shell file1" />
@@ -11759,7 +11759,7 @@
       <OntologyActionPatterns>
         <GetInstanceWithFactActionPattern>
           <FormalParameterReference name="?O2" />
-          <ConceptReference name="IPv4 address" />
+          <ConceptReference name="IPv4 addresss" />
           <FeatureReference name="has as external name" />
           <FormalParameterReference name="?S2" />
         </GetInstanceWithFactActionPattern>
@@ -11865,7 +11865,7 @@
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="IPv4 address" />
+                    <ConceptReference name="IPv4 addresss" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
@@ -11920,7 +11920,7 @@
                 <OntologyString>L11</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <MintermOfConcepts>
-                  <ConceptReference name="IPv4 address" />
+                  <ConceptReference name="IPv4 addresss" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>

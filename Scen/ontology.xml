@@ -20,44 +20,6 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="destination IP1">
-      <DirectSuperConcepts>
-        <ConceptReference name="IP assignment" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="destination IP1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="source IP1">
-      <DirectSuperConcepts>
-        <ConceptReference name="IP assignment" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="source IP1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
 <Instance name="source port1">
       <DirectSuperConcepts>
         <ConceptReference name="internal port" />
@@ -69,44 +31,6 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="source port1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="connection1">
-      <DirectSuperConcepts>
-        <ConceptReference name="connection" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="connection1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="domain1">
-      <DirectSuperConcepts>
-        <ConceptReference name="domain" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="domain1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -136,7 +60,7 @@
     </Instance>
 <Instance name="destination port1">
       <DirectSuperConcepts>
-        <ConceptReference name="DNS port" />
+        <ConceptReference name="DNS ports" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -145,6 +69,82 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="destination port1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="SMB transfer protocol">
+      <DirectSuperConcepts>
+        <ConceptReference name="application layer protocol" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="SMB transfer protocol" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Remote Procedure Call">
+      <DirectSuperConcepts>
+        <ConceptReference name="transport layer protocol" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Remote Procedure Call" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="source1">
+      <DirectSuperConcepts>
+        <ConceptReference name="IPv4 address" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="source1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="host">
+      <DirectSuperConcepts>
+        <ConceptReference name="IPv4 address" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="host" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -172,5 +172,72 @@
         </NLPattern>
       </NLInfo>
     </Instance>
+<Instance name="windows admin shares path1">
+      <DirectSuperConcepts>
+        <ConceptReference name="computer file system absolute path" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="windows admin shares path1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="executable file1">
+      <DirectSuperConcepts>
+        <ConceptReference name="executable file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="executable file1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 </Instances>
+<Facts>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="source1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>64.10.7.1</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="host" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>10.10.1.10</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="windows admin shares path1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>c:\windows\1111.exe </OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+</Facts>
 </Ontology>
