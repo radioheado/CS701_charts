@@ -216,6 +216,24 @@
       <FeatureReference name="has as external name" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="windows admin shares path1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>c:\windows\1111.exe</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="time1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>03/26/2020 08:35:43</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="source1" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>64.10.7.1</OntologyString>
@@ -228,15 +246,6 @@
         <InstanceReference name="host" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>10.10.1.10</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="windows admin shares path1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>c:\windows\1111.exe </OntologyString>
       </ConstantInstantiatedFormalParameters>
     </Fact>
 </Facts>

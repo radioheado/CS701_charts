@@ -5343,10 +5343,10 @@
               <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?S8" />
                 <LowerBound>
-                  <AnyStringBound />
+                  <ClassicEmptyBound />
                 </LowerBound>
                 <UpperBound>
-                  <AnyStringBound />
+                  <ClassicEmptyBound />
                 </UpperBound>
               </ParameterClassicPVSDomain>
               <ParameterClassicPVSDomain>
@@ -5550,10 +5550,10 @@
               <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?S2" />
                 <LowerBound>
-                  <AnyStringBound />
+                  <ClassicEmptyBound />
                 </LowerBound>
                 <UpperBound>
-                  <AnyStringBound />
+                  <ClassicEmptyBound />
                 </UpperBound>
               </ParameterClassicPVSDomain>
               <ParameterClassicPVSDomain>
@@ -5604,6 +5604,7 @@
                 <UpperBound>
                   <ClassicConceptBound>
                     <ConceptReference name="program" />
+                    <ConceptReference name="process" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -5915,10 +5916,10 @@
               <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?S2" />
                 <LowerBound>
-                  <AnyStringBound />
+                  <ClassicEmptyBound />
                 </LowerBound>
                 <UpperBound>
-                  <AnyStringBound />
+                  <ClassicEmptyBound />
                 </UpperBound>
               </ParameterClassicPVSDomain>
               <ParameterClassicPVSDomain>
@@ -5969,6 +5970,7 @@
                 <UpperBound>
                   <ClassicConceptBound>
                     <ConceptReference name="program" />
+                    <ConceptReference name="process" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>

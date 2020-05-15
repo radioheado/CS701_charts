@@ -6,7 +6,11 @@
         <Fragments>
           <String>Suspicious </String>
           <OntologyEntity>
-            <InstanceReference name="process1" />
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> written via </String>
+          <OntologyEntity>
+            <InstanceReference name="SMB transfer protocol" />
           </OntologyEntity>
         </Fragments>
       </NLPattern>
@@ -19,11 +23,30 @@
 <IntelligenceQuestionExample version="1.1" index="0" main="false">
       <NLPattern>
         <Fragments>
-          <String>What has generated the suspicious </String>
+          <String>why is </String>
           <OntologyEntity>
-            <InstanceReference name="process1" />
+            <InstanceReference name="executable file1" />
           </OntologyEntity>
-          <String>?</String>
+          <String> written into </String>
+          <OntologyEntity>
+            <OntologyString>c:\windows\1111.exe</OntologyString>
+          </OntologyEntity>
+          <String> host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> from external host </String>
+          <OntologyEntity>
+            <OntologyString>64.10.7.1</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="SMB transfer protocol" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
         </Fragments>
       </NLPattern>
       <SituationExampleReference version="1.0" kbPartName="Scen" index="0" />
