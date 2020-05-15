@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<SituationKB version="1.0">
+<SituationExamples>
+<SituationExample version="1.0" index="0">
+      <NLPattern>
+        <Fragments>
+          <String>Suspicious process</String>
+        </Fragments>
+      </NLPattern>
+      <NLPattern>
+        <Fragments />
+      </NLPattern>
+    </SituationExample>
+</SituationExamples>
+<IntelligenceQuestionExamples>
+<IntelligenceQuestionExample version="1.1" index="0" main="false">
+      <NLPattern>
+        <Fragments>
+          <String>What has generated the suspicious </String>
+          <OntologyEntity>
+            <ConceptReference name="connection" />
+          </OntologyEntity>
+          <String>?</String>
+        </Fragments>
+      </NLPattern>
+      <SituationExampleReference version="1.0" kbPartName="Scen" index="0" />
+    </IntelligenceQuestionExample>
+</IntelligenceQuestionExamples>
+<EvidenceAssociationMap>
+    <hypothesisEvidenceAssociationList />
+  </EvidenceAssociationMap>
+</SituationKB>
