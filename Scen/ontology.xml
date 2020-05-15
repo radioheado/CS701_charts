@@ -1,3 +1,43 @@
 <?xml version="1.0"?>
 <Ontology version="2">
+<Instances>
+<Instance name="process1">
+      <DirectSuperConcepts>
+        <ConceptReference name="Windows process" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="process1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="SMB transfer event1">
+      <DirectSuperConcepts>
+        <ConceptReference name="SMB transfer event" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="SMB transfer event1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+</Instances>
 </Ontology>

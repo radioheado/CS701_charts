@@ -3667,12 +3667,12 @@
           <FormalParameterReference name="?S5" />
           <FormalParameterReference name="?O2" />
           <FormalParameterReference name="?S6" />
-          <FormalParameterReference name="?O4" />
-          <FormalParameterReference name="?O6" />
-          <FormalParameterReference name="?O7" />
           <FormalParameterReference name="?O5" />
           <FormalParameterReference name="?O3" />
+          <FormalParameterReference name="?O4" />
+          <FormalParameterReference name="?O6" />
           <FormalParameterReference name="?O8" />
+          <FormalParameterReference name="?O7" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -4680,9 +4680,9 @@
           <FormalParameterReference name="?S7" />
           <FormalParameterReference name="?O2" />
           <FormalParameterReference name="?O3" />
+          <FormalParameterReference name="?S8" />
           <FormalParameterReference name="?O4" />
           <FormalParameterReference name="?O5" />
-          <FormalParameterReference name="?S8" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -4728,9 +4728,9 @@
               <FormalParameterReference name="?S7" />
               <FormalParameterReference name="?O2" />
               <FormalParameterReference name="?O3" />
+              <FormalParameterReference name="?S8" />
               <FormalParameterReference name="?O4" />
               <FormalParameterReference name="?O5" />
-              <FormalParameterReference name="?S8" />
             </ConstantFormalParametersSubList>
             <MultiVariableCondition>
               <AbstractFactsLinks>
@@ -4859,11 +4859,20 @@
                 </UpperBound>
               </ParameterClassicPVSDomain>
               <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S8" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?O4" />
                 <LowerBound>
-                  <ClassicConceptBound>
-                    <ConceptReference name="Windows service" />
-                  </ClassicConceptBound>
+                  <SingleInstanceBound>
+                    <InstanceReference name="Auriga Windows service1" />
+                  </SingleInstanceBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
@@ -4874,23 +4883,14 @@
               <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?O5" />
                 <LowerBound>
+                  <SingleInstanceBound>
+                    <InstanceReference name="Auriga DLL1" />
+                  </SingleInstanceBound>
+                </LowerBound>
+                <UpperBound>
                   <ClassicConceptBound>
                     <ConceptReference name="DLL" />
                   </ClassicConceptBound>
-                </LowerBound>
-                <UpperBound>
-                  <ClassicConceptBound>
-                    <ConceptReference name="program" />
-                  </ClassicConceptBound>
-                </UpperBound>
-              </ParameterClassicPVSDomain>
-              <ParameterClassicPVSDomain>
-                <FormalParameterReference name="?S8" />
-                <LowerBound>
-                  <AnyStringBound />
-                </LowerBound>
-                <UpperBound>
-                  <AnyStringBound />
                 </UpperBound>
               </ParameterClassicPVSDomain>
             </MultiVariableCondition>
@@ -4923,12 +4923,12 @@
                 <InstanceReference name="APT1" />
                 <FormalParameterReference name="?O3" />
                 <InstanceReference name="Auriga" />
+                <FormalParameterReference name="?S8" />
+                <OntologyString>netui.dll</OntologyString>
                 <FormalParameterReference name="?O4" />
                 <InstanceReference name="Auriga Windows service1" />
                 <FormalParameterReference name="?O5" />
                 <InstanceReference name="Auriga DLL1" />
-                <FormalParameterReference name="?S8" />
-                <OntologyString>netui.dll</OntologyString>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
           </ConditionGeneralizedExamplesList>
@@ -5132,7 +5132,7 @@
                 <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
                   <FormalParameterReference name="?S1" />
                 </Parameter>
-                <String>ï¿½(port </String>
+                <String>ï¿?(port </String>
                 <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
                   <FormalParameterReference name="?S2" />
                 </Parameter>
@@ -6124,8 +6124,8 @@
           <FormalParameterReference name="?S1" />
           <FormalParameterReference name="?S2" />
           <FormalParameterReference name="?S3" />
-          <FormalParameterReference name="?O2" />
           <FormalParameterReference name="?O3" />
+          <FormalParameterReference name="?O2" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -6282,13 +6282,13 @@
                 <OntologyString>%USERPROFILE%\\Local Settings\\Temp</OntologyString>
                 <FormalParameterReference name="?S3" />
                 <OntologyString>\\~_MC_[2-7]\\~[0-9]*</OntologyString>
-                <FormalParameterReference name="?O2" />
-                <MintermOfConcepts>
-                  <ConceptReference name="temporary folder" />
-                </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>
                   <ConceptReference name="temporary file" />
+                </MintermOfConcepts>
+                <FormalParameterReference name="?O2" />
+                <MintermOfConcepts>
+                  <ConceptReference name="temporary folder" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
@@ -7407,9 +7407,9 @@
           <FormalParameterReference name="?S1" />
           <FormalParameterReference name="?S2" />
           <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S3" />
           <FormalParameterReference name="?O2" />
           <FormalParameterReference name="?O3" />
-          <FormalParameterReference name="?S3" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -7449,9 +7449,9 @@
               <FormalParameterReference name="?S1" />
               <FormalParameterReference name="?S2" />
               <FormalParameterReference name="?O1" />
+              <FormalParameterReference name="?S3" />
               <FormalParameterReference name="?O2" />
               <FormalParameterReference name="?O3" />
-              <FormalParameterReference name="?S3" />
             </ConstantFormalParametersSubList>
             <MultiVariableCondition>
               <AbstractFactsLinks>
@@ -7516,11 +7516,20 @@
                 </UpperBound>
               </ParameterClassicPVSDomain>
               <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S3" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
-                  <ClassicConceptBound>
-                    <ConceptReference name="Windows service" />
-                  </ClassicConceptBound>
+                  <SingleInstanceBound>
+                    <InstanceReference name="Auriga Windows service1" />
+                  </SingleInstanceBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
@@ -7531,23 +7540,14 @@
               <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?O3" />
                 <LowerBound>
+                  <SingleInstanceBound>
+                    <InstanceReference name="Auriga DLL1" />
+                  </SingleInstanceBound>
+                </LowerBound>
+                <UpperBound>
                   <ClassicConceptBound>
                     <ConceptReference name="DLL" />
                   </ClassicConceptBound>
-                </LowerBound>
-                <UpperBound>
-                  <ClassicConceptBound>
-                    <ConceptReference name="program" />
-                  </ClassicConceptBound>
-                </UpperBound>
-              </ParameterClassicPVSDomain>
-              <ParameterClassicPVSDomain>
-                <FormalParameterReference name="?S3" />
-                <LowerBound>
-                  <AnyStringBound />
-                </LowerBound>
-                <UpperBound>
-                  <AnyStringBound />
                 </UpperBound>
               </ParameterClassicPVSDomain>
             </MultiVariableCondition>
@@ -7564,12 +7564,12 @@
                 <OntologyString>10.10.1.10</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <InstanceReference name="Auriga" />
+                <FormalParameterReference name="?S3" />
+                <OntologyString>superhard corp.</OntologyString>
                 <FormalParameterReference name="?O2" />
                 <InstanceReference name="Auriga Windows service1" />
                 <FormalParameterReference name="?O3" />
                 <InstanceReference name="Auriga DLL1" />
-                <FormalParameterReference name="?S3" />
-                <OntologyString>superhard corp.</OntologyString>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
           </ConditionGeneralizedExamplesList>
@@ -7746,9 +7746,9 @@
           <FormalParameterReference name="?S1" />
           <FormalParameterReference name="?S2" />
           <FormalParameterReference name="?O1" />
-          <FormalParameterReference name="?O2" />
-          <FormalParameterReference name="?O3" />
           <FormalParameterReference name="?S3" />
+          <FormalParameterReference name="?O3" />
+          <FormalParameterReference name="?O2" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -7788,9 +7788,9 @@
               <FormalParameterReference name="?S1" />
               <FormalParameterReference name="?S2" />
               <FormalParameterReference name="?O1" />
+              <FormalParameterReference name="?S3" />
               <FormalParameterReference name="?O2" />
               <FormalParameterReference name="?O3" />
-              <FormalParameterReference name="?S3" />
             </ConstantFormalParametersSubList>
             <MultiVariableCondition>
               <AbstractFactsLinks>
@@ -7855,11 +7855,20 @@
                 </UpperBound>
               </ParameterClassicPVSDomain>
               <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S3" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?O2" />
                 <LowerBound>
-                  <ClassicConceptBound>
-                    <ConceptReference name="Windows service" />
-                  </ClassicConceptBound>
+                  <SingleInstanceBound>
+                    <InstanceReference name="Auriga Windows service1" />
+                  </SingleInstanceBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
@@ -7870,23 +7879,14 @@
               <ParameterClassicPVSDomain>
                 <FormalParameterReference name="?O3" />
                 <LowerBound>
+                  <SingleInstanceBound>
+                    <InstanceReference name="Auriga DLL1" />
+                  </SingleInstanceBound>
+                </LowerBound>
+                <UpperBound>
                   <ClassicConceptBound>
                     <ConceptReference name="DLL" />
                   </ClassicConceptBound>
-                </LowerBound>
-                <UpperBound>
-                  <ClassicConceptBound>
-                    <ConceptReference name="program" />
-                  </ClassicConceptBound>
-                </UpperBound>
-              </ParameterClassicPVSDomain>
-              <ParameterClassicPVSDomain>
-                <FormalParameterReference name="?S3" />
-                <LowerBound>
-                  <AnyStringBound />
-                </LowerBound>
-                <UpperBound>
-                  <AnyStringBound />
                 </UpperBound>
               </ParameterClassicPVSDomain>
             </MultiVariableCondition>
@@ -7903,12 +7903,12 @@
                 <OntologyString>10.10.1.10</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <InstanceReference name="Auriga" />
-                <FormalParameterReference name="?O2" />
-                <InstanceReference name="Auriga Windows service1" />
-                <FormalParameterReference name="?O3" />
-                <InstanceReference name="Auriga DLL1" />
                 <FormalParameterReference name="?S3" />
                 <OntologyString>6B31344B40E2AF9C9EE3BA707558C14E</OntologyString>
+                <FormalParameterReference name="?O3" />
+                <InstanceReference name="Auriga DLL1" />
+                <FormalParameterReference name="?O2" />
+                <InstanceReference name="Auriga Windows service1" />
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
           </ConditionGeneralizedExamplesList>
