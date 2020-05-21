@@ -371,9 +371,38 @@
         </Fragments>
       </NLPattern>
     </HypothesisExample>
+<HypothesisExample version="1.0" index="15" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether there are instances of schtasks.exe running as processes on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> and one of them is the parent process of </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="16" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether there are active </String>
+          <OntologyEntity>
+            <InstanceReference name="Remote Procedure Call" />
+          </OntologyEntity>
+          <String> connections on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> after being mapped</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
 </HypothesisExamples>
 <TriggerExamples>
-<TriggerExample version="1.0" index="0" editedAfterGenerated="true">
+<TriggerExample version="1.0" index="0" editedAfterGenerated="false">
       <NLPattern>
         <Fragments>
           <String>Alert: </String>
@@ -511,11 +540,7 @@
 <CollectionTaskExample version="1.0" index="6" requested="false">
       <NLPattern>
         <Fragments>
-          <String>Check whether there are SMB connections over 445/tcp and followed by the creation of files matching the pattern C:\Windows\System32\AT\&lt;</String>
-          <OntologyEntity>
-            <OntologyString>C:\Windows\System32\AT\&lt;job_id\></OntologyString>
-          </OntologyEntity>
-          <String> on host </String>
+          <String>Check whether there are SMB connections over 445/tcp and followed by the creation of files matching the pattern C:\Windows\System32\AT\&lt;job_id\> on host </String>
           <OntologyEntity>
             <OntologyString>10.10.1.10</OntologyString>
           </OntologyEntity>
@@ -576,15 +601,25 @@
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="8" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="6" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="9" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="6" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="14" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="10" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="14" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="15" />
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="16" />
       </SubHypotheses>
     </ArgumentStepExample>
 </ArgumentStepExamples>

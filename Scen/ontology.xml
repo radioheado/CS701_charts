@@ -1,102 +1,7 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
-<Instance name="time2">
-      <DirectSuperConcepts>
-        <ConceptReference name="time" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="time2" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="time1">
-      <DirectSuperConcepts>
-        <ConceptReference name="time" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="time1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="source port1">
-      <DirectSuperConcepts>
-        <ConceptReference name="internal port" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="source port1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Execution tactic">
-      <DirectSuperConcepts>
-        <ConceptReference name="tactic" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Execution tactic" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Lateral Movement tactic">
-      <DirectSuperConcepts>
-        <ConceptReference name="tactic" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Lateral Movement tactic" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Scheduled Task technique">
+<Instance name="Windows Admin Shares technique">
       <DirectSuperConcepts>
         <ConceptReference name="technique" />
       </DirectSuperConcepts>
@@ -106,45 +11,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="Scheduled Task technique" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Windows Management Instrumentation technique">
-      <DirectSuperConcepts>
-        <ConceptReference name="technique" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Windows Management Instrumentation technique" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Service Execution technique">
-      <DirectSuperConcepts>
-        <ConceptReference name="technique" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Service Execution technique" />
+              <InstanceReference name="Windows Admin Shares technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -172,7 +39,7 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="Windows Admin Shares technique">
+<Instance name="Service Execution technique">
       <DirectSuperConcepts>
         <ConceptReference name="technique" />
       </DirectSuperConcepts>
@@ -182,7 +49,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="Windows Admin Shares technique" />
+              <InstanceReference name="Service Execution technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -191,9 +58,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="process1">
+<Instance name="Windows Management Instrumentation technique">
       <DirectSuperConcepts>
-        <ConceptReference name="Windows process" />
+        <ConceptReference name="technique" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -201,7 +68,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="process1" />
+              <InstanceReference name="Windows Management Instrumentation technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -210,9 +77,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="destination port1">
+<Instance name="Scheduled Task technique">
       <DirectSuperConcepts>
-        <ConceptReference name="DNS ports" />
+        <ConceptReference name="technique" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -220,7 +87,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="destination port1" />
+              <InstanceReference name="Scheduled Task technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -229,9 +96,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="SMB transfer protocol">
+<Instance name="Lateral Movement tactic">
       <DirectSuperConcepts>
-        <ConceptReference name="application layer protocol" />
+        <ConceptReference name="tactic" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -239,7 +106,83 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="SMB transfer protocol" />
+              <InstanceReference name="Lateral Movement tactic" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Execution tactic">
+      <DirectSuperConcepts>
+        <ConceptReference name="tactic" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Execution tactic" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="source port1">
+      <DirectSuperConcepts>
+        <ConceptReference name="internal port" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="source port1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="time1">
+      <DirectSuperConcepts>
+        <ConceptReference name="time" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="time1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="time2">
+      <DirectSuperConcepts>
+        <ConceptReference name="time" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="time2" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -267,9 +210,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="source1">
+<Instance name="SMB transfer protocol">
       <DirectSuperConcepts>
-        <ConceptReference name="IPv4 address" />
+        <ConceptReference name="application layer protocol" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -277,7 +220,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="source1" />
+              <InstanceReference name="SMB transfer protocol" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -286,9 +229,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="host">
+<Instance name="destination port1">
       <DirectSuperConcepts>
-        <ConceptReference name="IPv4 address" />
+        <ConceptReference name="DNS ports" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -296,7 +239,26 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="host" />
+              <InstanceReference name="destination port1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="process1">
+      <DirectSuperConcepts>
+        <ConceptReference name="Windows process" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="process1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -324,9 +286,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="scheduled task pattern by at">
+<Instance name="host">
       <DirectSuperConcepts>
-        <ConceptReference name="computer file system absolute path" />
+        <ConceptReference name="IPv4 address" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -334,7 +296,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="scheduled task pattern by at" />
+              <InstanceReference name="host" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -343,9 +305,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="windows admin shares path1">
+<Instance name="source1">
       <DirectSuperConcepts>
-        <ConceptReference name="computer file system absolute path" />
+        <ConceptReference name="IPv4 address" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -353,7 +315,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="windows admin shares path1" />
+              <InstanceReference name="source1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -381,60 +343,53 @@
         </NLPattern>
       </NLInfo>
     </Instance>
+<Instance name="windows admin shares path1">
+      <DirectSuperConcepts>
+        <ConceptReference name="computer file system absolute path" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="windows admin shares path1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="scheduled task pattern by at">
+      <DirectSuperConcepts>
+        <ConceptReference name="computer file system absolute path" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="scheduled task pattern by at" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 </Instances>
 <Facts>
 <Fact>
-      <FeatureReference name="has as external name matching" />
+      <FeatureReference name="has as technique" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="scheduled task pattern by at" />
+        <InstanceReference name="Lateral Movement tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>C:\Windows\System32\AT\&lt;job_id\></OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="time2" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>3/27/2020 05:07:25</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="windows admin shares path1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>c:\windows\1111.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="time1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>03/26/2020 08:35:43</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>64.10.7.1</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="host" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>10.10.1.10</OntologyString>
+        <InstanceReference name="Windows Admin Shares technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
@@ -443,7 +398,7 @@
         <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="Execution tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Windows Management Instrumentation technique" />
+        <InstanceReference name="Service Execution technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
@@ -461,16 +416,61 @@
         <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="Execution tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Service Execution technique" />
+        <InstanceReference name="Windows Management Instrumentation technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as technique" />
+      <FeatureReference name="has as external name" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Lateral Movement tactic" />
+        <InstanceReference name="host" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Windows Admin Shares technique" />
+        <OntologyString>10.10.1.10</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="source1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>64.10.7.1</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="time1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>03/26/2020 08:35:43</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="windows admin shares path1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>c:\windows\1111.exe</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="time2" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>3/27/2020 05:07:25</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name matching" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="scheduled task pattern by at" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>C:\Windows\System32\AT\&lt;job_id\></OntologyString>
       </ConstantInstantiatedFormalParameters>
     </Fact>
 </Facts>
