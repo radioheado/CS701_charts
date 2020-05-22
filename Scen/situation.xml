@@ -400,6 +400,31 @@
         </Fragments>
       </NLPattern>
     </HypothesisExample>
+<HypothesisExample version="1.0" index="19" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> executed on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="Service Execution technique" />
+          </OntologyEntity>
+          <String> via </String>
+          <OntologyEntity>
+            <InstanceReference name="Windows Service Control Manager" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
 </HypothesisExamples>
 <TriggerExamples>
 <TriggerExample version="1.0" index="0" editedAfterGenerated="false">
@@ -547,6 +572,21 @@
         </Fragments>
       </NLPattern>
     </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="7" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether the parent process of </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> is services.exe and whether services.exe received a network </String>
+          <OntologyEntity>
+            <ConceptReference name="connection" />
+          </OntologyEntity>
+          <String> 1 second before the spawning.</String>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
 </CollectionTaskExamples>
 <ArgumentStepExamples>
 <ArgumentStepExample version="1.0" index="0" favoring="true">
@@ -622,6 +662,13 @@
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="16" />
       </SubHypotheses>
     </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="13" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="4" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="19" />
+      </SubHypotheses>
+    </ArgumentStepExample>
 </ArgumentStepExamples>
 <AbductiveStepExamples>
 <AbductiveStepExample version="1.0" index="0">
@@ -657,6 +704,10 @@
 <CollectionStepExample version="1.0" index="6">
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="13" />
       <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="6" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="7">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="19" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="7" />
     </CollectionStepExample>
 </CollectionStepExamples>
 <EvidenceAssociationMap>

@@ -191,6 +191,44 @@
         </NLPattern>
       </NLInfo>
     </Instance>
+<Instance name="Silence">
+      <DirectSuperConcepts>
+        <ConceptReference name="APT group" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Silence" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="APT3">
+      <DirectSuperConcepts>
+        <ConceptReference name="APT group" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="APT3" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 <Instance name="Remote Procedure Call">
       <DirectSuperConcepts>
         <ConceptReference name="transport layer protocol" />
@@ -240,6 +278,82 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="destination port1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="RemoteCMD">
+      <DirectSuperConcepts>
+        <ConceptReference name="malware" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="RemoteCMD" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="xCmd">
+      <DirectSuperConcepts>
+        <ConceptReference name="neutral program" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="xCmd" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Winexe">
+      <DirectSuperConcepts>
+        <ConceptReference name="neutral program" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Winexe" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="RemoteExec">
+      <DirectSuperConcepts>
+        <ConceptReference name="neutral program" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="RemoteExec" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -343,7 +457,7 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="services utility">
+<Instance name="Windows Service Control Manager">
       <DirectSuperConcepts>
         <ConceptReference name="system utility" />
       </DirectSuperConcepts>
@@ -353,7 +467,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="services utility" />
+              <InstanceReference name="Windows Service Control Manager" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -499,6 +613,60 @@
       <FeatureReference name="has as external name" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="xCmd" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>xCmd</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Silence" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>Group-IB</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Silence" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>Oleg Skulkin</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Winexe" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>Winexe</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="RemoteCMD" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>RemoteCMD</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="RemoteExec" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>RemoteExec</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="PsExec utility" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>PsExec</OntologyString>
@@ -508,7 +676,7 @@
       <FeatureReference name="has as external name" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="services utility" />
+        <InstanceReference name="Windows Service Control Manager" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>services.exe</OntologyString>
       </ConstantInstantiatedFormalParameters>
@@ -583,6 +751,33 @@
         <InstanceReference name="scheduled task pattern by at" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>C:\Windows\System32\AT\&lt;job_id\></OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as tool" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="APT1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="xCmd" />
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as tool" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Silence" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="Winexe" />
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as tool" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="APT3" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="RemoteCMD" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 </Facts>
