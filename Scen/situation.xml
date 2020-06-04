@@ -179,7 +179,7 @@
       <NLPattern>
         <Fragments>
           <OntologyEntity>
-            <InstanceReference name="Service Execution technique" />
+            <InstanceReference name="System Service technique" />
           </OntologyEntity>
           <String>: </String>
           <OntologyEntity>
@@ -195,7 +195,7 @@
           </OntologyEntity>
           <String> through </String>
           <OntologyEntity>
-            <InstanceReference name="Service Execution technique" />
+            <InstanceReference name="System Service technique" />
           </OntologyEntity>
         </Fragments>
       </NLPattern>
@@ -414,14 +414,49 @@
           <OntologyEntity>
             <OntologyString>3/27/2020 05:07:25</OntologyString>
           </OntologyEntity>
+          <String> was launched by </String>
+          <OntologyEntity>
+            <OntologyString>services.exe</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="20" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="Service Execution sub-technique" />
+          </OntologyEntity>
+          <String>: </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> executed on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
           <String> through </String>
           <OntologyEntity>
-            <InstanceReference name="Service Execution technique" />
+            <InstanceReference name="Service Execution sub-technique" />
           </OntologyEntity>
-          <String> via </String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="21" negation="false">
+      <NLPattern>
+        <Fragments>
           <OntologyEntity>
-            <InstanceReference name="Windows Service Control Manager" />
+            <OntologyString>services.exe</OntologyString>
           </OntologyEntity>
+          <String> received a network </String>
+          <OntologyEntity>
+            <ConceptReference name="connection" />
+          </OntologyEntity>
+          <String> within 1 second before the spawning</String>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
@@ -579,11 +614,25 @@
           <OntologyEntity>
             <InstanceReference name="process1" />
           </OntologyEntity>
-          <String> is services.exe and whether services.exe received a network </String>
+          <String> is </String>
+          <OntologyEntity>
+            <OntologyString>services.exe</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="8" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether </String>
+          <OntologyEntity>
+            <OntologyString>services.exe</OntologyString>
+          </OntologyEntity>
+          <String> received a network </String>
           <OntologyEntity>
             <ConceptReference name="connection" />
           </OntologyEntity>
-          <String> 1 second before the spawning.</String>
+          <String> within 1 second before the spawning</String>
         </Fragments>
       </NLPattern>
     </CollectionTaskExample>
@@ -666,7 +715,15 @@
       <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="4" />
       <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="14" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
+      <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="19" />
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="21" />
       </SubHypotheses>
     </ArgumentStepExample>
 </ArgumentStepExamples>
@@ -708,6 +765,10 @@
 <CollectionStepExample version="1.0" index="7">
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="19" />
       <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="7" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="8">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="21" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="8" />
     </CollectionStepExample>
 </CollectionStepExamples>
 <EvidenceAssociationMap>

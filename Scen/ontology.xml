@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
-<Instance name="Scheduled Task technique">
+<Instance name="time2">
       <DirectSuperConcepts>
-        <ConceptReference name="technique" />
+        <ConceptReference name="time" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -11,7 +11,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="Scheduled Task technique" />
+              <InstanceReference name="time2" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -20,9 +20,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="Windows Management Instrumentation technique">
+<Instance name="time1">
       <DirectSuperConcepts>
-        <ConceptReference name="technique" />
+        <ConceptReference name="time" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -30,7 +30,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="Windows Management Instrumentation technique" />
+              <InstanceReference name="time1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -39,9 +39,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="Service Execution technique">
+<Instance name="source port1">
       <DirectSuperConcepts>
-        <ConceptReference name="technique" />
+        <ConceptReference name="internal port" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -49,45 +49,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="Service Execution technique" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Remote File Copy technique">
-      <DirectSuperConcepts>
-        <ConceptReference name="technique" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Remote File Copy technique" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Windows Admin Shares technique">
-      <DirectSuperConcepts>
-        <ConceptReference name="technique" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Windows Admin Shares technique" />
+              <InstanceReference name="source port1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -134,9 +96,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="source port1">
+<Instance name="Scheduled Task technique">
       <DirectSuperConcepts>
-        <ConceptReference name="internal port" />
+        <ConceptReference name="technique" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -144,7 +106,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="source port1" />
+              <InstanceReference name="Scheduled Task technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -153,9 +115,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="time2">
+<Instance name="Windows Management Instrumentation technique">
       <DirectSuperConcepts>
-        <ConceptReference name="time" />
+        <ConceptReference name="technique" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -163,7 +125,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="time2" />
+              <InstanceReference name="Windows Management Instrumentation technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -172,9 +134,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="time1">
+<Instance name="System Service technique">
       <DirectSuperConcepts>
-        <ConceptReference name="time" />
+        <ConceptReference name="technique" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -182,7 +144,64 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="time1" />
+              <InstanceReference name="System Service technique" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Remote File Copy technique">
+      <DirectSuperConcepts>
+        <ConceptReference name="technique" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Remote File Copy technique" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Windows Admin Shares technique">
+      <DirectSuperConcepts>
+        <ConceptReference name="technique" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Windows Admin Shares technique" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Service Execution sub-technique">
+      <DirectSuperConcepts>
+        <ConceptReference name="sub-technique" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Service Execution sub-technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -229,9 +248,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="Remote Procedure Call">
+<Instance name="process1">
       <DirectSuperConcepts>
-        <ConceptReference name="transport layer protocol" />
+        <ConceptReference name="Windows process" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -239,64 +258,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="Remote Procedure Call" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="SMB transfer protocol">
-      <DirectSuperConcepts>
-        <ConceptReference name="application layer protocol" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="SMB transfer protocol" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="destination port1">
-      <DirectSuperConcepts>
-        <ConceptReference name="DNS ports" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="destination port1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="RemoteCMD">
-      <DirectSuperConcepts>
-        <ConceptReference name="malware" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="RemoteCMD" />
+              <InstanceReference name="process1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -362,9 +324,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="process1">
+<Instance name="RemoteCMD">
       <DirectSuperConcepts>
-        <ConceptReference name="Windows process" />
+        <ConceptReference name="malware" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -372,7 +334,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="process1" />
+              <InstanceReference name="RemoteCMD" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -381,9 +343,9 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="SMB transfer event1">
+<Instance name="destination port1">
       <DirectSuperConcepts>
-        <ConceptReference name="SMB transfer event" />
+        <ConceptReference name="DNS ports" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -391,7 +353,64 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="SMB transfer event1" />
+              <InstanceReference name="destination port1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="SMB transfer protocol">
+      <DirectSuperConcepts>
+        <ConceptReference name="application layer protocol" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="SMB transfer protocol" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Remote Procedure Call">
+      <DirectSuperConcepts>
+        <ConceptReference name="transport layer protocol" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Remote Procedure Call" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="connection1">
+      <DirectSuperConcepts>
+        <ConceptReference name="inbound connection" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="connection1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -430,6 +449,82 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="host" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="SMB transfer event1">
+      <DirectSuperConcepts>
+        <ConceptReference name="SMB transfer event" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="SMB transfer event1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="scheduled task pattern by at">
+      <DirectSuperConcepts>
+        <ConceptReference name="computer file system absolute path" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="scheduled task pattern by at" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="windows admin shares path1">
+      <DirectSuperConcepts>
+        <ConceptReference name="computer file system absolute path" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="windows admin shares path1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="executable file1">
+      <DirectSuperConcepts>
+        <ConceptReference name="executable file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="executable file1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -514,99 +609,42 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="executable file1">
-      <DirectSuperConcepts>
-        <ConceptReference name="executable file" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="executable file1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="scheduled task pattern by at">
-      <DirectSuperConcepts>
-        <ConceptReference name="computer file system absolute path" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="scheduled task pattern by at" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="windows admin shares path1">
-      <DirectSuperConcepts>
-        <ConceptReference name="computer file system absolute path" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="windows admin shares path1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
 </Instances>
 <Facts>
 <Fact>
-      <FeatureReference name="has as technique" />
+      <FeatureReference name="has as tool" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Execution tactic" />
+        <InstanceReference name="APT1" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Windows Management Instrumentation technique" />
+        <InstanceReference name="xCmd" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as technique" />
+      <FeatureReference name="has as tool" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Execution tactic" />
+        <InstanceReference name="Silence" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Scheduled Task technique" />
+        <InstanceReference name="Winexe" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as technique" />
+      <FeatureReference name="has as tool" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Execution tactic" />
+        <InstanceReference name="APT3" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Service Execution technique" />
+        <InstanceReference name="RemoteCMD" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as technique" />
+      <FeatureReference name="has as external name matching" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Lateral Movement tactic" />
+        <InstanceReference name="scheduled task pattern by at" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Windows Admin Shares technique" />
+        <OntologyString>C:\Windows\System32\AT\&lt;job_id\></OntologyString>
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
@@ -745,39 +783,48 @@
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as external name matching" />
+      <FeatureReference name="has as technique" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="scheduled task pattern by at" />
+        <InstanceReference name="Execution tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>C:\Windows\System32\AT\&lt;job_id\></OntologyString>
+        <InstanceReference name="Windows Management Instrumentation technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as tool" />
+      <FeatureReference name="has as technique" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="APT1" />
+        <InstanceReference name="Execution tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="xCmd" />
+        <InstanceReference name="Scheduled Task technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as tool" />
+      <FeatureReference name="has as technique" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Silence" />
+        <InstanceReference name="Execution tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Winexe" />
+        <InstanceReference name="System Service technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as tool" />
+      <FeatureReference name="has as technique" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="APT3" />
+        <InstanceReference name="Lateral Movement tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="RemoteCMD" />
+        <InstanceReference name="Windows Admin Shares technique" />
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as sub-technique" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="System Service technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="Service Execution sub-technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 </Facts>
