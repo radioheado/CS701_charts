@@ -401,15 +401,15 @@
 <HypothesisExample version="1.0" index="16" negation="false">
       <NLPattern>
         <Fragments>
-          <String>Check whether there are active </String>
+          <String>the </String>
           <OntologyEntity>
-            <InstanceReference name="Remote Procedure Call" />
+            <ConceptReference name="connection" />
           </OntologyEntity>
-          <String> connections on host </String>
+          <String> has an rpc interface </String>
           <OntologyEntity>
-            <OntologyString>10.10.1.10</OntologyString>
+            <OntologyString>ITaskSchedulerService</OntologyString>
           </OntologyEntity>
-          <String> after being mapped</String>
+          <String> </String>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
@@ -678,6 +678,21 @@
         </Fragments>
       </NLPattern>
     </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="11" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether the </String>
+          <OntologyEntity>
+            <ConceptReference name="connection" />
+          </OntologyEntity>
+          <String> has an rpc interface </String>
+          <OntologyEntity>
+            <OntologyString>ITaskSchedulerService</OntologyString>
+          </OntologyEntity>
+          <String> </String>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
 </CollectionTaskExamples>
 <ArgumentStepExamples>
 <ArgumentStepExample version="1.0" index="0" favoring="true">
@@ -819,6 +834,10 @@
 <CollectionStepExample version="1.0" index="10">
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="22" />
       <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="10" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="11">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="16" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="11" />
     </CollectionStepExample>
 </CollectionStepExamples>
 <EvidenceAssociationMap>
