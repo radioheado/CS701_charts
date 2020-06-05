@@ -3667,12 +3667,12 @@
           <FormalParameterReference name="?S5" />
           <FormalParameterReference name="?O2" />
           <FormalParameterReference name="?S6" />
-          <FormalParameterReference name="?O7" />
-          <FormalParameterReference name="?O8" />
-          <FormalParameterReference name="?O4" />
-          <FormalParameterReference name="?O5" />
-          <FormalParameterReference name="?O6" />
           <FormalParameterReference name="?O3" />
+          <FormalParameterReference name="?O4" />
+          <FormalParameterReference name="?O7" />
+          <FormalParameterReference name="?O6" />
+          <FormalParameterReference name="?O8" />
+          <FormalParameterReference name="?O5" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -4681,8 +4681,8 @@
           <FormalParameterReference name="?O2" />
           <FormalParameterReference name="?O3" />
           <FormalParameterReference name="?S8" />
-          <FormalParameterReference name="?O4" />
           <FormalParameterReference name="?O5" />
+          <FormalParameterReference name="?O4" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -4925,10 +4925,10 @@
                 <InstanceReference name="Auriga" />
                 <FormalParameterReference name="?S8" />
                 <OntologyString>netui.dll</OntologyString>
-                <FormalParameterReference name="?O4" />
-                <InstanceReference name="Auriga Windows service1" />
                 <FormalParameterReference name="?O5" />
                 <InstanceReference name="Auriga DLL1" />
+                <FormalParameterReference name="?O4" />
+                <InstanceReference name="Auriga Windows service1" />
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
           </ConditionGeneralizedExamplesList>
@@ -6126,8 +6126,8 @@
           <FormalParameterReference name="?S1" />
           <FormalParameterReference name="?S2" />
           <FormalParameterReference name="?S3" />
-          <FormalParameterReference name="?O2" />
           <FormalParameterReference name="?O3" />
+          <FormalParameterReference name="?O2" />
         </SharedParameters>
         <Explanations>
           <Positive>
@@ -6284,13 +6284,13 @@
                 <OntologyString>%USERPROFILE%\\Local Settings\\Temp</OntologyString>
                 <FormalParameterReference name="?S3" />
                 <OntologyString>\\~_MC_[2-7]\\~[0-9]*</OntologyString>
-                <FormalParameterReference name="?O2" />
-                <MintermOfConcepts>
-                  <ConceptReference name="temporary folders" />
-                </MintermOfConcepts>
                 <FormalParameterReference name="?O3" />
                 <MintermOfConcepts>
                   <ConceptReference name="temporary files" />
+                </MintermOfConcepts>
+                <FormalParameterReference name="?O2" />
+                <MintermOfConcepts>
+                  <ConceptReference name="temporary folders" />
                 </MintermOfConcepts>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
