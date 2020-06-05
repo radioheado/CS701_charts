@@ -96,7 +96,7 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="Scheduled Task technique">
+<Instance name="Scheduled Task or Job technique">
       <DirectSuperConcepts>
         <ConceptReference name="technique" />
       </DirectSuperConcepts>
@@ -106,7 +106,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="Scheduled Task technique" />
+              <InstanceReference name="Scheduled Task or Job technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -183,6 +183,44 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="Windows Admin Shares technique" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="Scheduled Task sub-technique">
+      <DirectSuperConcepts>
+        <ConceptReference name="sub-technique" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="Scheduled Task sub-technique" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="AT Windows sub-technique">
+      <DirectSuperConcepts>
+        <ConceptReference name="sub-technique" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="AT Windows sub-technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -651,6 +689,24 @@
       <FeatureReference name="has as external name" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Scheduled Task sub-technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>schtasks.exe</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="AT Windows sub-technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>at.exe</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="xCmd" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>xCmd</OntologyString>
@@ -797,7 +853,7 @@
         <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="Execution tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Scheduled Task technique" />
+        <InstanceReference name="Scheduled Task or Job technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
@@ -816,6 +872,24 @@
         <InstanceReference name="Lateral Movement tactic" />
         <FormalParameterReference name="&lt;P2>" />
         <InstanceReference name="Windows Admin Shares technique" />
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as sub-technique" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Scheduled Task or Job technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="Scheduled Task sub-technique" />
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as sub-technique" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Scheduled Task or Job technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="AT Windows sub-technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
