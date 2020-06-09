@@ -174,7 +174,7 @@
       <NLPattern>
         <Fragments>
           <OntologyEntity>
-            <InstanceReference name="System Service technique" />
+            <InstanceReference name="System Services technique" />
           </OntologyEntity>
           <String>: </String>
           <OntologyEntity>
@@ -190,7 +190,7 @@
           </OntologyEntity>
           <String> through </String>
           <OntologyEntity>
-            <InstanceReference name="System Service technique" />
+            <InstanceReference name="System Services technique" />
           </OntologyEntity>
         </Fragments>
       </NLPattern>
@@ -545,6 +545,80 @@
         </Fragments>
       </NLPattern>
     </HypothesisExample>
+<HypothesisExample version="1.0" index="27" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>Windows Service has changed on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> after </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="28" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>Changes to Windows Service on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> is not related to trusted program or known patch cycles</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="29" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>New entries has been added to Windows Service Registry on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> after </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="30" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>Service functions are invoked through command-line tools on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> after </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="31" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> was generated on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="PsExec utility" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
 </HypothesisExamples>
 <TriggerExamples>
 <TriggerExample version="1.0" index="0" editedAfterGenerated="false">
@@ -762,6 +836,78 @@
         </Fragments>
       </NLPattern>
     </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="14" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether there are new entries added to HKLM\SYSTEM\CurrentControlSet\Services on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> between </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> and </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="15" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether Service functions are invoked through command-line tools on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> between </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> and </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="16" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether there are untrusted software or unknown patch cycles cause Windows Registry 1 on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> being changed after </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="17" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether </String>
+          <OntologyEntity>
+            <InstanceReference name="process1" />
+          </OntologyEntity>
+          <String> was generated on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="PsExec utility" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
 </CollectionTaskExamples>
 <ArgumentStepExamples>
 <ArgumentStepExample version="1.0" index="0" favoring="true">
@@ -873,6 +1019,31 @@
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="26" />
       </SubHypotheses>
     </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="19" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="27" />
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="28" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="20" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="27" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="29" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="21" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="27" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="30" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="22" favoring="true">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="31" />
+      </SubHypotheses>
+    </ArgumentStepExample>
 </ArgumentStepExamples>
 <AbductiveStepExamples>
 <AbductiveStepExample version="1.0" index="0">
@@ -928,6 +1099,22 @@
 <CollectionStepExample version="1.0" index="13">
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="25" />
       <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="13" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="14">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="29" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="14" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="15">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="30" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="15" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="16">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="28" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="16" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="17">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="31" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="17" />
     </CollectionStepExample>
 </CollectionStepExamples>
 <EvidenceAssociationMap>
