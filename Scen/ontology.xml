@@ -172,25 +172,6 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="Windows Admin Shares technique">
-      <DirectSuperConcepts>
-        <ConceptReference name="technique" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Windows Admin Shares technique" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
 <Instance name="Remote Services technique">
       <DirectSuperConcepts>
         <ConceptReference name="technique" />
@@ -202,6 +183,25 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="Remote Services technique" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="SMB Windows Admin Shares sub-technique">
+      <DirectSuperConcepts>
+        <ConceptReference name="sub-technique" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="SMB Windows Admin Shares sub-technique" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -727,6 +727,33 @@
       <FeatureReference name="has as external name" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Windows Management Instrumentation technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>WMI</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="Service Execution sub-technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>Service Execution</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="SMB Windows Admin Shares sub-technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>SMB/Windows Admin Shares sub-technique</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="Scheduled Task sub-technique" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>schtasks.exe</OntologyString>
@@ -918,16 +945,16 @@
         <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="Lateral Movement tactic" />
         <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Windows Admin Shares technique" />
+        <InstanceReference name="Remote Services technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
-      <FeatureReference name="has as technique" />
+      <FeatureReference name="has as sub-technique" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Lateral Movement tactic" />
-        <FormalParameterReference name="&lt;P2>" />
         <InstanceReference name="Remote Services technique" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="SMB Windows Admin Shares sub-technique" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>

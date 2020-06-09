@@ -566,7 +566,11 @@
           <OntologyEntity>
             <OntologyString>10.10.1.10</OntologyString>
           </OntologyEntity>
-          <String> is not related to trusted program or known patch cycles</String>
+          <String> are not related to </String>
+          <OntologyEntity>
+            <ConceptReference name="trusted program" />
+          </OntologyEntity>
+          <String> or known patch cycles</String>
         </Fragments>
       </NLPattern>
     </HypothesisExample>
@@ -615,6 +619,57 @@
           <String> on </String>
           <OntologyEntity>
             <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="32" negation="false">
+      <NLPattern>
+        <Fragments>
+          <String>there are entry changes related to the scheduled task folder on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> between </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> and </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="33" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="SMB Windows Admin Shares sub-technique" />
+          </OntologyEntity>
+          <String>: </String>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> written into </String>
+          <OntologyEntity>
+            <OntologyString>c:\windows\1111.exe</OntologyString>
+          </OntologyEntity>
+          <String> of host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> from external host </String>
+          <OntologyEntity>
+            <OntologyString>64.10.7.1</OntologyString>
+          </OntologyEntity>
+          <String> through </String>
+          <OntologyEntity>
+            <InstanceReference name="SMB transfer protocol" />
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
           </OntologyEntity>
         </Fragments>
       </NLPattern>
@@ -875,7 +930,11 @@
 <CollectionTaskExample version="1.0" index="16" requested="false">
       <NLPattern>
         <Fragments>
-          <String>Check whether there are untrusted software or unknown patch cycles cause Windows Registry 1 on host </String>
+          <String>Check whether there are untrusted </String>
+          <OntologyEntity>
+            <ConceptReference name="software" />
+          </OntologyEntity>
+          <String> or unknown patch cycles cause Windows Registry 1 on host </String>
           <OntologyEntity>
             <OntologyString>10.10.1.10</OntologyString>
           </OntologyEntity>
@@ -908,9 +967,46 @@
         </Fragments>
       </NLPattern>
     </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="18" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether there are entry changes related to the scheduled task folder on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> between </String>
+          <OntologyEntity>
+            <OntologyString>03/26/2020 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String> and </String>
+          <OntologyEntity>
+            <OntologyString>3/27/2020 05:07:25</OntologyString>
+          </OntologyEntity>
+          <String> that correlate with </String>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
+<CollectionTaskExample version="1.0" index="19" requested="false">
+      <NLPattern>
+        <Fragments>
+          <String>Check whether there is network flow of SMB write event correlates to </String>
+          <OntologyEntity>
+            <InstanceReference name="executable file1" />
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+        </Fragments>
+      </NLPattern>
+    </CollectionTaskExample>
 </CollectionTaskExamples>
 <ArgumentStepExamples>
 <ArgumentStepExample version="1.0" index="0" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L10 - almost certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="0" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
@@ -1014,12 +1110,14 @@
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="18" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="2" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="26" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="19" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="27" />
@@ -1027,21 +1125,38 @@
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="20" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="27" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="29" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="21" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="27" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="30" />
       </SubHypotheses>
     </ArgumentStepExample>
 <ArgumentStepExample version="1.0" index="22" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="20" />
       <SubHypotheses>
         <HypothesisExampleReference version="1.0" kbPartName="Scen" index="31" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="23" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="6" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="32" />
+      </SubHypotheses>
+    </ArgumentStepExample>
+<ArgumentStepExample version="1.0" index="24" favoring="true">
+      <DiscipleReferencedBeliefValue system="Likeliness 11 System" name="L11 - certain" />
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="26" />
+      <SubHypotheses>
+        <HypothesisExampleReference version="1.0" kbPartName="Scen" index="33" />
       </SubHypotheses>
     </ArgumentStepExample>
 </ArgumentStepExamples>
@@ -1115,6 +1230,14 @@
 <CollectionStepExample version="1.0" index="17">
       <HypothesisExampleReference version="1.0" kbPartName="Scen" index="31" />
       <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="17" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="18">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="32" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="18" />
+    </CollectionStepExample>
+<CollectionStepExample version="1.0" index="19">
+      <HypothesisExampleReference version="1.0" kbPartName="Scen" index="33" />
+      <CollectionTaskExampleReference version="1.0" kbPartName="Scen" index="19" />
     </CollectionStepExample>
 </CollectionStepExamples>
 <EvidenceAssociationMap>
